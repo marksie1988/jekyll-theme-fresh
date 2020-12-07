@@ -35,3 +35,6 @@ exclude:
   - vendor/ruby/
   - LICENSE.md
   - README.md
+  
+gist:
+  noscript: false
