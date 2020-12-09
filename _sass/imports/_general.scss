@@ -118,13 +118,9 @@ pre {
 }
 
 blockquote {
-  border-bottom: 1px solid _palette(secondary);
-  border-top: 3px solid _palette(secondary);
-  font-size: 2rem;
+  border-top: 3px solid _palette(primary);
   line-height: 1.25;
-  margin: 2.5rem 0;
-  padding-bottom: 1em;
-  padding-top: 0.83333em;
+  padding-left: 1em;
 
   &:first-child {
     margin-top: 0
