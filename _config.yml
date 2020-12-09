@@ -9,7 +9,7 @@ palette: blue
 header:
   title: Fresh
   tagline: Header Tagline
-  profile_img: images/avatar.png
+  profile_img: /assets/images/avatar.png
   bg: dark
   has_nav: true
   has_social: true
