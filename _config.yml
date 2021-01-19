@@ -23,6 +23,12 @@ sass:
   indentWidth: 4
   style: nested
   precision: 10
+
+# Fill in your Google Analytics gtag.js ID to track your website using gtag
+#gtag: ""
+# Fill in your Google adsense ID to implement page ads
+#autoads_client: ""
+
 plugins:
   - jekyll-menus
 exclude:
