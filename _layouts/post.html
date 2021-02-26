@@ -15,7 +15,11 @@ layout: body
     {% assign content_img_path_is_not_empty = page.content_img_path | is_not_empty %}
     {% if content_img_path_is_not_empty %}
     <div class="post-thumbnail">
-      <img src="{{ page.content_img_path | relative_url }}" alt="{{ page.title }}" />
+      {% assign webp_img = page.thumb_img_path | split: '.' %}
+          <picture>
+            <source type="image/webp" srcset="{{ webp_img[0] | relative_url }}.webp" >
+            <img src="{{ page.thumb_img_path | relative_url }}" class="thumbnail" alt="{{ page.title }}" />
+          </picture>
     </div><!-- .post-thumbnail -->
     {% endif %}
     <div class="post-content">
