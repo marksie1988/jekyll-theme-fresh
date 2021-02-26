@@ -5,8 +5,13 @@
         {% assign profile_img_is_not_empty = site.header.profile_img | is_not_empty %}
         {% if profile_img_is_not_empty %}
         <p class="profile">
-          <a href='{{ '/' | relative_url }}'><img src="{{ site.header.profile_img | relative_url }}"
-              class="avatar" alt="Author Avatar" /></a>
+          <a href='{{ '/' | relative_url }}'>
+            {% assign webp_img = site.header.profile_img | split: '.' %}
+            <picture>
+              <source type="image/webp" srcset="{{ webp_img[0] | relative_url }}.webp" >
+              <img src="{{ site.header.profile_img | relative_url }}" class="avatar" alt="Author Avatar" />
+            </picture>
+          </a>
         </p><!-- .profile -->
         {% endif %}
         <div class="site-identity">

@@ -24,6 +24,17 @@ sass:
   style: nested
   precision: 10
 
+webp:
+  enabled: true
+  quality: 75
+  img_dir: ["/assets/images/"]
+  nested: true
+  formats: [".jpeg", ".jpg", ".png", ".tiff"]
+  gifs: [".gif"]
+  regenerate: false
+  webp_path: nil
+  exclude: []
+  append_ext: false
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
 #gtag: ""
 # Fill in your Google adsense ID to implement page ads
