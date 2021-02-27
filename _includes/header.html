@@ -9,7 +9,7 @@
             {% assign webp_img = site.header.profile_img | split: '.' %}
             <picture>
               <source type="image/webp" srcset="{{ webp_img[0] | relative_url }}.webp" >
-              <img src="{{ site.header.profile_img | relative_url }}" class="avatar" alt="Author Avatar" />
+              <img src="{{ site.header.profile_img | relative_url }}" class="avatar" width="45px" height="45px" alt="Author Avatar" />
             </picture>
           </a>
         </p><!-- .profile -->
