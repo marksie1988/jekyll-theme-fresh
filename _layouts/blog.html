@@ -12,8 +12,8 @@ layout: body
         <a class="post-thumbnail" href="{{ post.url | relative_url }}">
           {% assign webp_img = post.thumb_img | split: '.' %}
           <picture>
-            <source type="image/webp" srcset="/assets/images/posts/{{ post.slug }}/{{ webp_img[0] | relative_url }}.webp" >
-            <img src="/assets/images/posts/{{ post.slug }}/{{ post.thumb_img | relative_url }}" class="thumbnail" alt="{{ post.title }}" />
+            <source type="image/webp" srcset="/assets/images/posts/{{ post.slug }}{{ webp_img[0] | relative_url }}.webp" >
+            <img src="/assets/images/posts/{{ post.slug }}{{ post.thumb_img | relative_url }}" class="thumbnail" alt="{{ post.title }}" />
           </picture>
         </a>
         {% endif %}
