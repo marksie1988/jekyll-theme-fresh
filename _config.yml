@@ -4,6 +4,7 @@ permalink: '/:title/'
 collections:
   posts:
     permalink: '/posts/:title/'
+reading_time: true
 layout_style: overflow
 palette: blue
 header:

@@ -1,0 +1,101 @@
+.fa{
+    box-sizing: border-box;
+    padding: 2px;
+    width: 27.5px;
+    height: 27.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: _palette(primary) !important;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+.search {
+    &__container {
+        padding-top: 20px;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+        color: #ff8b88;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 12px 24px;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        color: _palette(accent);
+        border-radius: 50px;
+        border: 1px solid #575756;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+
+        &::placeholder {
+            color: color(#575756 a(0.8));
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        &:hover,
+        &:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #575756;
+            border-radius: 0;
+            background-position: 100% center;
+        }
+    }
+    &__results {
+        padding-top: 60px;
+    }
+    &__header_form{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: all 1s;
+        width: 35px;
+        height: 35px;
+        background: #fff;;
+        box-sizing: border-box;
+        border-radius: 25px  !important;
+        border: 4px solid #fff !important;
+        padding: 5px;
+
+        &:hover{
+            width: 100% !important;
+            cursor: pointer;
+        }
+
+        &:hover input{
+            display: block !important;
+        }
+
+        &:hover .fa{
+            background: _palette(primary) !important;
+            color: #fff !important;
+        }
+    }
+    &__header_input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 31px !important;
+        line-height: 12.5px !important;
+        outline: 0;
+        border: 0 !important;
+        display: none !important;
+        font-size: 13px !important;
+        border-radius: 20px !important;
+        padding: 0 20px !important;
+    }
+}

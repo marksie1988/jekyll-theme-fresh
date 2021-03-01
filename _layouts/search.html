@@ -1,0 +1,13 @@
+---
+layout: body
+---
+<div class="search__container">
+  <form action="/search" method="get">
+    <input class="search__input" type="text" id="search-box" placeholder="Search" name="query">
+    <i class="fa fa-search"></i>
+  </form>
+  <ul id="search-results" class="search__results"></ul>
+</div>
+<script src="/assets/js/search-content.js"></script>
+<script src="/assets/js/lunr.min.js"></script>
+<script src="/assets/js/search.js"></script>
