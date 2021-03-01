@@ -16,13 +16,13 @@ layout: body
       {{ page.subtitle }}
     </div><!-- .post-subtitle -->
     {% endif %}
-    {% assign content_img_path_is_not_empty = page.content_img_path | is_not_empty %}
-    {% if content_img_path_is_not_empty %}
+    {% assign content_img_is_not_empty = page.content_img | is_not_empty %}
+    {% if content_img_is_not_empty %}
     <div class="post-thumbnail">
-      {% assign webp_img = page.thumb_img_path | split: '.' %}
+      {% assign webp_img = page.thumb_img | split: '.' %}
           <picture>
-            <source type="image/webp" srcset="{{ webp_img[0] | relative_url }}.webp" >
-            <img src="{{ page.thumb_img_path | relative_url }}" class="thumbnail" alt="{{ page.title }}" />
+            <source type="image/webp" srcset="/assets/images/posts/{{ page.slug }}{{ webp_img[0] | relative_url }}.webp" >
+            <img src="/assets/images/posts/{{ page.slug }}{{ page.thumb_img | relative_url }}" class="thumbnail" alt="{{ page.title }}" />
           </picture>
     </div><!-- .post-thumbnail -->
     {% endif %}

@@ -8,8 +8,8 @@ excerpt: >-
   situated in Shiroishi, Miyagi it based in the Miyagi Zao mountains. Visitors
   can visit a village where there is a vast population of foxes.
 date: '2018-01-11'
-thumb_img_path: /assets/images/5.jpg
-content_img_path: /assets/images/5.jpg
+thumb_img: 5.jpg
+content_img: 5.jpg
 layout: post
 ---
 
